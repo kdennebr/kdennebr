@@ -5,7 +5,8 @@ This repository contains projects and code related to my work in software engine
 
 The projects in this repository reflect my ongoing development in areas such as systems programming, data structures, and software design.
 
-Current Contents
+Current Contents:
+
 Rideshare Pricing & Simulation (C)
 
 A command-line application that simulates a rideshare system, including ride pricing, trip duration estimation, and basic operational metrics.
