@@ -18,3 +18,31 @@ Key concepts used:
 - input validation
 - randomized simulation
 - aggregation of system metrics
+
+Athlete Training Report (C++)
+
+A command-line program that tracks mileage for multiple athletes across multiple days and generates a weekly training report.
+
+Key concepts used:
+
+- 2D arrays
+- modular programming
+- function prototypes
+- input validation
+- loops and nested loops
+- basic statistics
+- report generation
+
+Employee Management / Production Worker Demo (C++)
+
+A class-based program that models an employee and production worker using inheritance and encapsulation.
+
+Key concepts used:
+
+- classes and objects
+- inheritance
+- constructors
+- getters and setters
+- encapsulation
+- basic object-oriented design
+- clean console output
