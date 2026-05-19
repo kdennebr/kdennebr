@@ -1,48 +1,49 @@
-Kayden Denne-Brown – Code Repository
-Overview
+# Kayden Denne-Brown – Code Repository Overview
 
-This repository contains projects and code related to my work in software engineering, with a focus on building systems, strengthening core programming fundamentals, and applying problem-solving in practical contexts.
+This repository contains projects related to software engineering, systems programming, and applied problem-solving. The work in this repository reflects my ongoing development in programming fundamentals, software design, and modular system development.
 
-The projects in this repository reflect my ongoing development in areas such as systems programming, data structures, and software design.
+My projects primarily focus on:
 
-Current Contents:
+- object-oriented programming
+- systems-level problem solving
+- data structures and algorithms
+- console-based application development
+- modular software design
+- input validation and data processing
 
-Rideshare Pricing & Simulation (C)
+## Current Projects
 
-A command-line application that simulates a rideshare system, including ride pricing, trip duration estimation, and basic operational metrics.
+### Rideshare Pricing & Simulation (C)
+
+A command-line application that simulates a rideshare system, including ride pricing, trip duration estimation, and operational metrics.
 
 Key concepts used:
-
-- structured data (struct)
-- modular programming (functions)
-- input validation
+- structured data (`struct`)
+- modular programming
 - randomized simulation
 - aggregation of system metrics
-
-Athlete Training Report (C++)
-
-A command-line program that tracks mileage for multiple athletes across multiple days and generates a weekly training report.
-
-Key concepts used:
-
-- 2D arrays
-- modular programming
-- function prototypes
 - input validation
-- loops and nested loops
-- basic statistics
-- report generation
 
-Employee Management / Production Worker Demo (C++)
+### Athlete Training Report (C++)
 
-A class-based program that models an employee and production worker using inheritance and encapsulation.
+A console-based application that tracks athlete mileage across multiple training days and generates statistical training reports.
 
 Key concepts used:
+- multidimensional arrays
+- modular function design
+- nested loops
+- statistical calculations
+- report generation
+- input validation
 
+### Employee Management / Production Worker Demo (C++)
+
+An object-oriented application demonstrating inheritance and encapsulation through employee and production worker classes.
+
+Key concepts used:
 - classes and objects
 - inheritance
 - constructors
 - getters and setters
 - encapsulation
-- basic object-oriented design
-- clean console output
+- object-oriented programming fundamentals
