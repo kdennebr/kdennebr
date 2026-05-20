@@ -20,6 +20,10 @@ In Progress
 - Reward creation
 - Reward redemption
 - Points deduction through negative ledger entries
+- Promotion creation and management
+- Active promotion filtering by start/end date
+- Category-based multiplier promotions
+- Bonus point calculation during transaction processing
 
 ## API Areas
 
