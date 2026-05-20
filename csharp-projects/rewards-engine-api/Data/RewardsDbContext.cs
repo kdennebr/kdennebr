@@ -14,5 +14,6 @@ namespace loyalty_application.Data
         public DbSet<PointLedgerEntry> PointLedgerEntries { get; set; }
         public DbSet<Reward> Rewards { get; set; }
         public DbSet<Redemption> Redemptions { get; set; }
+        public DbSet<Promotion> Promotions { get; set; }
     }
 }

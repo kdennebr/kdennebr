@@ -91,11 +91,51 @@ public class TransactionsController : ControllerBase
             return Conflict("A transaction with this external transaction ID already exists");
         }
 
-        // Calculates Points
-        // Current Rule: 1 Point Per Whole Dollar Spent
-        int basePoints = (int)Math.Floor(request.Subtotal);
-        int bonusPoints = 0;
-        int totalPoints = basePoints + bonusPoints;
+       // Calculates Base Points
+// Current Rule: 1 Point Per Whole Dollar Spent
+int basePoints = (int)Math.Floor(request.Subtotal);
+
+// Gets Active Promotions
+var now = DateTime.UtcNow;
+
+var activePromotions = await _context.Promotions
+    .Where(p => p.IsActive && p.StartDate <= now && p.EndDate >= now)
+    .ToListAsync();
+
+int bonusPoints = 0;
+
+// Applies Promotion Rules
+foreach (var promotion in activePromotions)
+{
+    bool categoryMatches =
+        string.IsNullOrWhiteSpace(promotion.Category) ||
+        promotion.Category.Equals(request.Category, StringComparison.OrdinalIgnoreCase);
+
+    if (!categoryMatches)
+    {
+        continue;
+    }
+
+    if (promotion.PromotionType == "Multiplier" && promotion.Multiplier != null)
+    {
+        int multipliedPoints = (int)Math.Floor(basePoints * promotion.Multiplier.Value);
+
+        bonusPoints += multipliedPoints - basePoints;
+    }
+    else if (promotion.PromotionType == "FixedBonus" && promotion.BonusPoints != null)
+    {
+        bonusPoints += promotion.BonusPoints.Value;
+    }
+    else if (promotion.PromotionType == "MinimumSpendBonus" &&
+             promotion.BonusPoints != null &&
+             promotion.MinimumSpend != null &&
+             request.Subtotal >= promotion.MinimumSpend.Value)
+    {
+        bonusPoints += promotion.BonusPoints.Value;
+    }
+}
+
+int totalPoints = basePoints + bonusPoints;
 
         // Creates Purchase Transaction
         var transaction = new PurchaseTransaction
