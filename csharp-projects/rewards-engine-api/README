@@ -1,0 +1,55 @@
+# C# Projects
+
+This folder contains C#/.NET projects focused on backend development, API design, database integration, and practical software engineering concepts.
+
+These projects are intended to demonstrate my ability to build structured applications using modern C# development practices, including controllers, data models, DTOs, database persistence, validation, and clean project organization.
+
+---
+
+## Projects
+
+### Rewards Engine API
+
+A backend API project for managing customer accounts, purchase transactions, reward points, and loyalty-style ledger tracking.
+
+The goal of this project is to model a simplified rewards system where customers can earn points through purchase transactions, maintain a points history, and eventually redeem points for rewards.
+
+Current features:
+- ASP.NET Core Web API setup
+- Swagger/OpenAPI testing
+- SQLite database integration
+- Entity Framework Core migrations
+- Customer creation, update, deactivation, and reactivation
+- Purchase transaction processing
+- Duplicate transaction protection
+- Points calculation from purchases
+- Points ledger tracking
+- Customer points balance lookup
+
+Planned features:
+- Promotion rules engine
+- Reward redemption system
+- Unit testing
+- Docker support
+- GitHub Actions CI pipeline
+- Deployment
+
+Key concepts used:
+- C#
+- ASP.NET Core
+- Entity Framework Core
+- SQLite
+- REST API design
+- DTOs
+- Controllers
+- Database migrations
+- Validation
+- Ledger-based state tracking
+
+---
+
+## Purpose
+
+The C# projects in this folder are designed to show practical backend engineering skills beyond basic classroom assignments. They focus on building software that resembles real business systems, with an emphasis on maintainability, data integrity, and clear API behavior.
+
+Future C# projects may include additional backend systems, automation tools, dashboards, or full-stack applications.
