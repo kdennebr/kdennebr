@@ -1,55 +1,38 @@
-# C# Projects
+# Rewards Engine API
 
-This folder contains C#/.NET projects focused on backend development, API design, database integration, and practical software engineering concepts.
+Backend API for managing customer accounts, purchase transactions, points ledger tracking, rewards, and redemptions.
 
-These projects are intended to demonstrate my ability to build structured applications using modern C# development practices, including controllers, data models, DTOs, database persistence, validation, and clean project organization.
+## Status
 
----
+In Progress
 
-## Projects
+## Current Features
 
-### Rewards Engine API
-
-A backend API project for managing customer accounts, purchase transactions, reward points, and loyalty-style ledger tracking.
-
-The goal of this project is to model a simplified rewards system where customers can earn points through purchase transactions, maintain a points history, and eventually redeem points for rewards.
-
-Current features:
-- ASP.NET Core Web API setup
+- ASP.NET Core Web API
 - Swagger/OpenAPI testing
-- SQLite database integration
-- Entity Framework Core migrations
+- SQLite database with Entity Framework Core
 - Customer creation, update, deactivation, and reactivation
 - Purchase transaction processing
 - Duplicate transaction protection
 - Points calculation from purchases
-- Points ledger tracking
+- Ledger-based points tracking
 - Customer points balance lookup
+- Reward creation
+- Reward redemption
+- Points deduction through negative ledger entries
 
-Planned features:
-- Promotion rules engine
-- Reward redemption system
-- Unit testing
-- Docker support
-- GitHub Actions CI pipeline
-- Deployment
+## API Areas
 
-Key concepts used:
+- Customers
+- Transactions
+- Points Ledger
+- Rewards
+- Redemptions
+
+## Tech Stack
+
 - C#
 - ASP.NET Core
 - Entity Framework Core
 - SQLite
-- REST API design
-- DTOs
-- Controllers
-- Database migrations
-- Validation
-- Ledger-based state tracking
-
----
-
-## Purpose
-
-The C# projects in this folder are designed to show practical backend engineering skills beyond basic classroom assignments. They focus on building software that resembles real business systems, with an emphasis on maintainability, data integrity, and clear API behavior.
-
-Future C# projects may include additional backend systems, automation tools, dashboards, or full-stack applications.
+- Swagger/OpenAPI
