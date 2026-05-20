@@ -12,5 +12,7 @@ namespace loyalty_application.Data
         public DbSet<Customer> Customers { get; set; }
         public DbSet<PurchaseTransaction> PurchaseTransactions { get; set; }
         public DbSet<PointLedgerEntry> PointLedgerEntries { get; set; }
+        public DbSet<Reward> Rewards { get; set; }
+        public DbSet<Redemption> Redemptions { get; set; }
     }
 }

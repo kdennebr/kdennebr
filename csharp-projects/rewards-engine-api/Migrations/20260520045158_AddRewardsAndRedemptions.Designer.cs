@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using loyalty_application.Data;
 
@@ -10,9 +11,11 @@ using loyalty_application.Data;
 namespace loyalty_application.Migrations
 {
     [DbContext(typeof(RewardsDbContext))]
-    partial class RewardsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260520045158_AddRewardsAndRedemptions")]
+    partial class AddRewardsAndRedemptions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.8");
