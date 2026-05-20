@@ -1,15 +1,59 @@
 # Kayden Denne-Brown – Code Repository Overview
 
-This repository contains projects related to software engineering, systems programming, and applied problem-solving. The work in this repository reflects my ongoing development in programming fundamentals, software design, object-oriented programming, and data structures.
+This repository contains projects related to software engineering, systems programming, backend development, data structures, and applied problem-solving.
 
-My projects primarily focus on:
+The work in this repository reflects my ongoing development as a Software Engineering student, with projects built in C, C++, Java, and C#. The projects focus on programming fundamentals, object-oriented design, data structures, backend API development, and practical software systems.
 
-- object-oriented programming
-- data structures and algorithms
-- systems-level problem solving
-- console-based application development
-- modular software design
-- file processing and data management
+## Primary Areas of Focus
+
+- Backend software development
+- Object-oriented programming
+- Data structures and algorithms
+- Systems-level problem solving
+- API design and database integration
+- Console-based application development
+- Modular software design
+- File processing and data management
+
+---
+
+## Featured Project
+
+### Rewards Engine API (C# / ASP.NET Core)
+
+A backend API project for managing customer accounts, purchase transactions, rewards points, and loyalty-style ledger tracking.
+
+This project is designed to demonstrate backend engineering concepts such as REST API design, database persistence, customer lifecycle management, transaction processing, validation, and points ledger tracking.
+
+Current features:
+- ASP.NET Core Web API
+- Swagger/OpenAPI testing
+- SQLite database with Entity Framework Core
+- Customer creation, update, deactivation, and reactivation
+- Purchase transaction processing
+- Duplicate transaction protection
+- Points calculation from purchases
+- Points ledger history
+- Customer points balance lookup
+
+Planned features:
+- Promotion rules engine
+- Reward redemption system
+- Unit testing
+- Docker support
+- GitHub Actions CI pipeline
+
+Key concepts used:
+- C#
+- ASP.NET Core
+- Entity Framework Core
+- SQLite
+- REST APIs
+- DTOs
+- Controllers
+- Database migrations
+- Backend validation
+- Ledger-based state tracking
 
 ---
 
@@ -20,11 +64,12 @@ My projects primarily focus on:
 A command-line application that simulates a rideshare system, including ride pricing, trip duration estimation, and operational metrics.
 
 Key concepts used:
-- structured data (`struct`)
-- modular programming
-- randomized simulation
-- aggregation of system metrics
-- input validation
+- Structured data (`struct`)
+- Modular programming
+- Randomized simulation
+- Aggregation of system metrics
+- Input validation
+- Queue-style ride processing
 
 ---
 
@@ -33,12 +78,12 @@ Key concepts used:
 A console-based application that tracks athlete mileage across multiple training days and generates statistical training reports.
 
 Key concepts used:
-- multidimensional arrays
-- modular function design
-- nested loops
-- statistical calculations
-- report generation
-- input validation
+- Multidimensional arrays
+- Modular function design
+- Nested loops
+- Statistical calculations
+- Report generation
+- Input validation
 
 ---
 
@@ -47,12 +92,12 @@ Key concepts used:
 An object-oriented application demonstrating inheritance and encapsulation through employee and production worker classes.
 
 Key concepts used:
-- classes and objects
-- inheritance
-- constructors
-- getters and setters
-- encapsulation
-- object-oriented programming fundamentals
+- Classes and objects
+- Inheritance
+- Constructors
+- Getters and setters
+- Encapsulation
+- Object-oriented programming fundamentals
 
 ---
 
@@ -61,12 +106,12 @@ Key concepts used:
 A Java application implementing custom generic stack structures and stack-based algorithms. The project includes stack merging, duplicate detection, and second-largest value calculations using reusable generic methods.
 
 Key concepts used:
-- generic programming
-- stack data structures
-- algorithms
-- reusable methods
-- object-oriented programming
-- data processing
+- Generic programming
+- Stack data structures
+- Algorithms
+- Reusable methods
+- Object-oriented programming
+- Data processing
 
 ---
 
@@ -75,9 +120,33 @@ Key concepts used:
 A Java application that manages and organizes travel destinations using custom singly and doubly linked lists. The program sorts destinations, removes categories dynamically, and displays itineraries in reverse order.
 
 Key concepts used:
-- singly linked lists
-- doubly linked lists
-- custom node structures
-- dynamic data management
-- sorting algorithms
-- object-oriented programming
+- Singly linked lists
+- Doubly linked lists
+- Custom node structures
+- Dynamic data management
+- Sorting logic
+- Object-oriented programming
+
+---
+
+## Languages and Technologies
+
+- C#
+- ASP.NET Core
+- Entity Framework Core
+- SQLite
+- C
+- C++
+- Java
+- SQL
+- Git
+- Swagger/OpenAPI
+- Visual Studio Code
+
+---
+
+## Repository Purpose
+
+This repository serves as a portfolio of my software engineering growth. It includes foundational programming projects, data structure implementations, simulations, and backend development work.
+
+My goal is to continue improving this repository by expanding beyond coursework into more complete software systems with stronger architecture, testing, documentation, and deployment practices.
