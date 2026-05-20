@@ -116,4 +116,59 @@ public class CustomerController : ControllerBase
 
         return Ok(customer);
     }
+
+    [HttpGet("{id}/points")]
+    public async Task<IActionResult> GetCustomerPoints(int id)
+    {
+        var customer = await _context.Customers.FindAsync(id);
+        if (customer == null)
+        {
+            return NotFound("Customer not found");
+        }
+
+        int totalPoints = await _context.PointLedgerEntries
+            .Where(p => p.CustomerId == id)
+            .SumAsync(p => p.PointsChanged);
+
+        return Ok(new { CustomerId = id, TotalPoints = totalPoints });
+    }
+
+    [HttpGet("{id}/ledger")]
+    public async Task<IActionResult> GetCustomerLedger(int id)
+    {
+        var customer = await _context.Customers.FindAsync(id);
+        if (customer == null)
+        {
+            return NotFound("Customer not found");
+        }
+
+        var ledgerEntries = await _context.PointLedgerEntries
+            .Where(p => p.CustomerId == id)
+            .ToListAsync();
+
+        return Ok(ledgerEntries);
+    }
+
+    // Reactivates a customer
+[HttpPatch("{id}/reactivate")]
+public async Task<IActionResult> ReactivateCustomer(int id)
+{
+    var customer = await _context.Customers.FindAsync(id);
+
+    if (customer == null)
+    {
+        return NotFound("Customer not found");
+    }
+
+    if (customer.IsActive)
+    {
+        return BadRequest("Customer is already active");
+    }
+
+    customer.IsActive = true;
+
+    await _context.SaveChangesAsync();
+
+    return Ok("Customer reactivated successfully");
+}
 }
